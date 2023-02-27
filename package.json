@@ -1,0 +1,10 @@
+{
+  "name": "coquelicot",
+  "version": "1.0.0",
+  "description": "web site for coquelicot",
+  "main": "index.js",
+  "repository": "git@github.com:maitrecanard/coquelicot.git",
+  "author": "maitrecanard <mathieusiaudeau@gmail.com>",
+  "license": "MIT",
+  "private": true
+}

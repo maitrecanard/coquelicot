@@ -1,0 +1,33 @@
+main {
+    background-color: #000;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 20em;
+        margin-top: -20em;
+        margin-bottom: 2em;
+        border-radius: 50%;
+        border: 3px white solid;
+
+    }
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+       font-size: 2em;
+       margin-bottom: .5em;  
+    }
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+    }
+}
