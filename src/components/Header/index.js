@@ -5,7 +5,9 @@ function Header() {
     return (
       <header>
          <nav></nav>
-         <div  style={{ backgroundImage: `url(${fond})` }}></div>
+         <div className='ban' style={{ backgroundImage: `url(${fond})`, backgroundPosition: '150px' }}>
+            <h1>Pension le Coquelicot</h1>
+         </div>
       </header>
     );
   }
