@@ -1,8 +1,11 @@
+import Boss from './Boss';
+import Map from './Map'
 
 function Services() {
     return (
         <article>
-            <section></section>
+            <Map />
+            <Boss />
         </article>
     );
 }

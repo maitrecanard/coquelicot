@@ -2,6 +2,7 @@
 import './styles.css';
 import Header from '../Header';
 import Main from '../Main';
+import Services from '../Services';
 import Footer from '../Footer';
 
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header />
       <Main />
+      <Services />
       <Footer />
     </>
   );
