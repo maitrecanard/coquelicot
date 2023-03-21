@@ -36,4 +36,26 @@
     }
     }
     
-
+.service--mob {
+    
+    display: flex;
+    flex-direction: column-reverse;
+    img {
+        margin: 1em auto;
+        width: 95%;
+        border-radius: 15px;
+    }
+    .service-container {
+        color: vars.$font-color-white;
+        margin: 1em 0 0 0;
+        padding: 1em;
+        h3 {
+            font-size: 2em;
+            margin: 1.5em auto;
+        }
+        p {
+            font-size: 1.5em;
+            line-height: 1.2em;
+        }
+    }
+}

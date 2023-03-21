@@ -1,6 +1,6 @@
 @use 'src/styles/vars';
 
-
+/* Desktop version */
 
 header {
     width: 100%;
@@ -46,4 +46,22 @@ header {
 }
 .coquelicot {
     color:vars.$coquelicot; 
+}
+
+/* mobile version */
+
+.ban-mob {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 6em;
+        font-family: vars.$paris;
+        color:vars.$font-color-white;
+        text-align: center;
+    }
 }

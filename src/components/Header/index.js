@@ -1,6 +1,6 @@
 import './header.scss'
 import fond from '../../assets/images/fond.jpg'; 
-import fondmob from '../../assets/images/fondmob.jpg'; 
+import fondmob from '../../assets/images/chevaux2.jpg'; 
 import wood from '../../assets/images/wood.jpg';
 import { useMediaQuery } from 'react-responsive'
 
@@ -25,7 +25,10 @@ function Header() {
        { isDesktop &&  <div className='ban' style={{ backgroundImage: `url(${fond})`, backgroundPosition: '150px' }}>
             <h1>Pension le <span className='coquelicot'>Coquelicot</span></h1>
          </div> }
-         { isMobile &&  <div className='ban' style={{ backgroundImage: `url(${fondmob})` }}>
+         { isMobile &&  <div className='ban-mob' style={{ backgroundImage: `url(${fondmob})`, 
+                                                          backgroundPosition: 'top center', 
+                                                          backgroundRepeat: 'no-repeat',
+                                                          backgroundSize:'cover'}}>
             <h1>Pension le <span className='coquelicot'>Coquelicot</span></h1>
          </div> }
       </header>
