@@ -1,8 +1,7 @@
 @import './variables';
 
-.form-contact {
-    width: 100%;
-    form {
+
+    .form-contact  {
         @include xs {
             width: 95%;
         }
@@ -86,4 +85,3 @@
         display: block;
         background-color:green;
     }
-}

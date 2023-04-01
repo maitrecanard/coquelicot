@@ -1,10 +1,11 @@
 
 const mail = {
 
-    form : document.querySelector('#form_message'),
+    form : document.querySelector('.form-contact'),
     champ: document.querySelector('.form_opa'),
     message : document.querySelector('.message'),
     httpHeaders: new Headers(),
+   
     
 
     apiUrl: "https://messenger.pension-le-coquelicot.fr/api/",
@@ -13,9 +14,9 @@ const mail = {
     uri : "sendmail",
 
     init: function() {
-        const submit = document.querySelector('form');
-        submit.addEventListener('submit', mail.controlMail);
         mail.httpHeaders.append("Content-Type", "application/json");
+        const submit = mail.form;
+        submit.addEventListener('submit', mail.controlMail);
     },
 
     controlMail: function(event)
@@ -131,7 +132,7 @@ const mail = {
 
     cleanForm: function()
     {
-        const form = document.querySelector('form');
+        const form = mail.form;
         form.reset();
     }
 
