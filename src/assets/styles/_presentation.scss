@@ -1,0 +1,32 @@
+@import './variables';
+
+.main__presentation {
+    @include xs {
+        padding: 2em 1em;
+        margin-top: 1em;
+    }
+    width: 100%;
+    height: auto;
+    color: var(--font-color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4em;
+    margin-bottom: 1.5em;
+   
+    h2 {
+        margin: 1em 0;
+        font-size: 3em;
+        font-family: var(--paris);
+        font-weight: 800;
+        color: var(--font-color-white);
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.7em;
+        color: var(--font-color-white);
+        margin: .5em 0;
+    }
+}

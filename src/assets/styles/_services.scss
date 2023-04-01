@@ -1,0 +1,77 @@
+@import 'media-queries';
+@use './variables';
+.service {
+    @include xs {
+        flex-direction: column;
+        padding: 0 1em;
+    }
+    display: flex;
+    flex-direction: row;
+    padding: 0 4em;
+    margin: 3.5em 0;
+    img {
+        width: 390px;
+        border-radius: 40px;
+        border: 0;
+    }
+    .service-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: .5em;
+        color: var(--font-color-white);
+        .number {
+            border: 3px solid var(--coquelicot);
+            padding: .2em .5em;
+            color: var(--coquelicot);
+            font-size: 2em;
+            border-radius: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        h3 {
+            font-size: 2em;
+            margin: 1.5em auto;
+            color: var(--font-color-white);
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.7em;
+            color: var(--font-color-white);
+            padding: .5em;
+        }
+    }
+}
+
+
+.boss__content {
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/images/chevaux.jpg');
+    background-position: top center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    img {
+        width: 200px;
+        border-radius: 100%;
+        border: .4em solid var(--coquelicot) ;
+    }
+    p {
+        margin-top: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--font-color-white);
+        text-shadow: rgb(0, 0, 0) 1px 0 2px;
+    }
+}
+
+iframe {
+    border: none;
+}

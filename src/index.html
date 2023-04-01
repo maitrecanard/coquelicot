@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/011d5ad9e9.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Pension le coquelicot</title>
+    <style>
+
+/* Center the loader */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.loader-container img {
+    width: 10rem;
+    border-radius: 50%;
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.loader {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 998;
+    top:50%;
+    left:50%;
+   /* border: 5px solid rgb(238, 238, 238);*/
+    border-top: 5px solid #ff222d;
+    border-radius: 50%;
+   /* box-shadow: 0 0 5px 2px rgb(153, 153, 153);*/
+    animation: loader 1s linear infinite;
+    transform: translate(-50%, -50%) rotate(0deg);
+  
+
+}
+.loader-logo {
+    position: absolute;
+    animation: 0;
+
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+    width: 68px;
+    z-index: 999;
+
+}
+@keyframes loader {
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+ 
+.stop {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader">
+        </div>
+
+    </div>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="#passion">Notre passion</a></li>
+              <li><a href="#job">Notre métier</a></li>
+              <li><a href="#services">Nos Services</a></li>
+              <li><a href="#map">Où sommmes nous ?</a></li>
+              <li><a href="#contact">Nous contacter</a></li>
+            </ul>
+        </nav>
+        <div class='ban'>
+            <h1>Pension le <span class='coquelicot'>Coquelicot</span></h1>
+         </div>
+    </header>
+    <main>
+        <article>
+            <section id="passion" class='main__presentation' >
+                <h2>Une <span class='coquelicot'>passion</span> au service des chevaux</h2>
+                <p>Bienvenue à La Pension du Coquelicot, à Valdivienne dans le 86. Avec des années d'expérience et une passion profonde pour nos animaux, nous sommes fiers de fournir les meilleurs services et soins possibles pour votre cheval.</p>
+
+                <p>Notre pension offre un environnement calme et serein pour votre cheval, avec des installations bien entretenues, des produits de qualité et des conditions optimales pour leurs bien-être. Nous proposons des boxes de chevaux spacieux et bien aérés, des paddocks spacieux, des carrières, des allées de promenade et des prairies ouvertes pour faire de l'exercice.</p>
+
+                <p>Nous offrons également aux propriétaires un service exceptionnel et des soins professionnels pour assurer la santé et le bien-être de leurs chevaux. Nous pouvons offrir des services de toilages, de pansage et de soins aux chevaux, ainsi qu’une alimentation saine et appropriée. Nous pouvons également organiser des leçons particulières et des camps d'équitation.</p>
+
+                <p>Si vous souhaitez vous inscrire à La Pension du Coquelicot, n'hésitez pas à nous contacter et nous serons heureux de vous guider pour trouver la solution qui convient le mieux à vos besoins et à ceux de votre cheval.</p>
+            </section>
+            <section id="job" class='service'>
+                <img src="./assets/images/ecurie.jpg" />
+                <div class='service-container'>
+                    <h3>Notre métier</h3>
+                    <p>Est de fournir un lieu de vie et des soins pour les chevaux appartenant à des propriétaires qui ne peuvent pas les garder chez eux. La pension le Coquelicot offre un large éventail de services, allant de la simple location de box à la pension de luxe avec des installations complètes pour l'entraînement et la compétition.
+
+                       .</p>
+                </div>
+            </section>
+            <section id="services" class='service'>
+                <div class='service-container'>
+                    <h3>Nos services</h3>
+                    <p> Les tâches principales d'un propriétaire de pension pour chevaux comprennent la gestion quotidienne de la pension, la fourniture de nourriture et d'eau, l'entretien des installations, le nettoyage des box et des paddocks, ainsi que la surveillance de la santé des chevaux. Ils peuvent également organiser des activités et des événements pour les propriétaires de chevaux, tels que des cours d'équitation ou des compétitions</p>
+                </div>
+                <img src="./assets/images/promenade.jpg" />
+            </section>
+            <section class='boss__section'>
+                <div class='boss__content'>
+                    <img src="assets/images/Clair2.jpg" />
+                    <p><span class='coquelicot'>Clair Boudain</span> gérante</p>
+                </div>
+            </section>
+            <section id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.6081523853!2d0.6051723159914146!3d46.49607097912682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fdca933a22f3e3%3A0xdda87703345d3a73!2sLa%20Vitrerie%2C%2086300%20Valdivienne!5e0!3m2!1sfr!2sfr!4v1678905668600!5m2!1sfr!2sfr" width="100%" height="450px" ></iframe>
+            </section>
+        </article>
+        <div id="contact" class="form-contact">
+            <form>
+                <h3>Nous contacter</h3>
+                <div id="champ" >
+                    <div class="form_opa">
+                        <div class="message"></div>
+                    </div>
+                    <input id="message_name" type="text" name="name" placeholder="Nom et prénom" />
+                    <input id="message_email" type="email" name="email" placeholder="Adresse email" />
+                    <textarea id="message_content" rows="5" name="content" placeholder="Message"></textarea>
+                    <button>Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Tout droits réservé | Réalisation <a href="mathieusiaudeau.fr">Mathieu SIAUDEAU</a> | Mentions légales</p>
+    </footer>
+</body>
+</html>
